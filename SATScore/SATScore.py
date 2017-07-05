@@ -1,14 +1,11 @@
+##### Import Libraries Section #####
 import pandas as pd
 import numpy as np
+
+##### Variables Initialization #####
 data = pd.read_csv("C:\\Personal\\Data\\scores.csv")
 
-#function to label bars in the barplots
-def barlabel(b, i):
-    for bar in bars:
-        height = bar.get_height()
-        ax[i].text(bar.get_x()+bar.get_width()/2., 0.90*height, 
-            '%d' % int(height), color='white', ha='center', va='bottom')
-
+##### Processing Section #####
 print('Highest average SAT Math score {} Lowest score {}.'.format(
       int(data['Average Score (SAT Math)'].max()), int(data['Average Score (SAT Math)'].min())))
 print('\t')
