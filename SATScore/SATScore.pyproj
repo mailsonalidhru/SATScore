@@ -5,12 +5,12 @@
     <ProjectGuid>a8010d86-0e38-4dd2-988b-259c793d8121</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>SATScore.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <SearchPath>..\..\..\..\Program Files\dotnet;..\..\..\..\Program Files\Anaconda3;..\..\..\..\Program Files\Anaconda3\Scripts;..\..\..\..\Program Files\Anaconda3\Library\bin;..\..\..\..\Program Files\Git\cmd;..\..\..\..\Program Files\Python36\Lib\site-packages;..\..\..\..\Program Files\Anaconda3\Lib\site-packages</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>SATScore</Name>
     <RootNamespace>SATScore</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="SATScore.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
